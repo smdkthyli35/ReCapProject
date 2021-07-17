@@ -1,8 +1,9 @@
 ﻿using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
-using Entities.Concrete;
+using Core.Entities.Concrete;
 using System;
+using Entities.Concrete;
 
 namespace ConsoleUI
 {
@@ -15,18 +16,18 @@ namespace ConsoleUI
             //RentalTest();
         }
 
-        private static void UserAddTest()
-        {
-            UserManager userManager = new UserManager(new EfUserDal());
+        //private static void UserAddTest()
+        //{
+        //    UserManager userManager = new UserManager(new EfUserDal());
 
-            var result = userManager.Add(new User
-            {
-                FirstName = "Veli",
-                LastName = "Değirmen",
-                Email = "veli@gmail.com",
-                Password = "12345678"
-            });
-        }
+        //    var result = userManager.Add(new User
+        //    {
+        //        FirstName = "Veli",
+        //        LastName = "Değirmen",
+        //        Email = "veli@gmail.com",
+        //        Password = "12345678"
+        //    });
+        //}
 
         private static void RentalTest()
         {
